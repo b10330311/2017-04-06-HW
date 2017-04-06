@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>計算機</h1>
+A:<br>
+<input type="number" id="A" value="0">
+<br>
+B:<br>
+<input type="number" id="B" value="0">
+<br><br>
+
+<script>
+function plus() {
+    var x,y,
+    x=parseInt(document.getElementById('A').value)
+    y=parseInt(document.getElementById('B').value)
+    document.getElementById("result").innerHTML = x+y
+}
+function sub() {
+    var x,y,
+    x=parseInt(document.getElementById('A').value)
+    y=parseInt(document.getElementById('B').value)
+    document.getElementById("result").innerHTML = x-y
+}
+function mul() {
+    var x,y,
+    x=parseInt(document.getElementById('A').value)
+    y=parseInt(document.getElementById('B').value)
+    document.getElementById("result").innerHTML = x*y
+}
+function div() {
+    var x,y,
+    x=parseInt(document.getElementById('A').value)
+    y=parseInt(document.getElementById('B').value)
+    document.getElementById("result").innerHTML = x/y
+}
+function del(){
+	document.getElementById('A').value=0
+    document.getElementById('B').value=0
+    document.getElementById("result").innerHTML = 0
+}
+</script>
+<output id="result"></output>
+<br>
+<button  onclick=plus()> 加</button>
+<button  onclick=sub()> 減</button>
+<button  onclick=mul()>乘</button>
+<button  onclick=div()>除</button>
+<button  onclick=del()>C</button>
+</body>
+</html>
